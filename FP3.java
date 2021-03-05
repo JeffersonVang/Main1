@@ -43,7 +43,7 @@ public class MovieDriver {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/omdb";
 			String username = "root";
-			String password = "1234";
+			String password = " ";
 			con = DriverManager.getConnection(dbURL, username, password);
 
 			String sql = "Insert INTO Movies (native_name, english_name, year_made) VALUES (?, ?, ?)";
@@ -77,7 +77,7 @@ public class MovieDriver {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/omdb";
 			String username = "root";
-			String password = "1234";
+			String password = " ";
 			con = DriverManager.getConnection(dbURL, username, password);
 
 			String sql = "SELECT movies.movie_id, movies.native_name, movies.english_name, movies.year_made, movie_data.tag_line, movie_data.language,"
@@ -121,7 +121,7 @@ public class MovieDriver {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/omdb";
 			String username = "root";
-			String password = "1234";
+			String password = " ";
 			con = DriverManager.getConnection(dbURL, username, password);
 
 			String sql = "UPDATE Movies SET native_name =?, english_name=?, year_made=? WHERE movie_id=?";
@@ -157,7 +157,7 @@ public class MovieDriver {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/omdb";
 			String username = "root";
-			String password = "1234";
+			String password = " ";
 			con = DriverManager.getConnection(dbURL, username, password);
 
 			String sql = "Delete FROM Movies WHERE movie_id =?";
@@ -184,7 +184,7 @@ public class MovieDriver {
 	}
 
 	public static void main(String args[]) {
-		// createMovie("Godzllia", "Godzilla", 20014);
+		// createMovie("Transformers", "Transformers", 2008);
 		// updateMovie(20118, "Wall-E", "Wall-E", 2009);
 		// deleteMovie(20118);
 		// readMovie();
